@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-page-rebuild/static/css/main.c26271da.chunk.css",
+    "main.js": "/personal-page-rebuild/static/js/main.4506cc70.chunk.js",
+    "main.js.map": "/personal-page-rebuild/static/js/main.4506cc70.chunk.js.map",
+    "runtime-main.js": "/personal-page-rebuild/static/js/runtime-main.011c3454.js",
+    "runtime-main.js.map": "/personal-page-rebuild/static/js/runtime-main.011c3454.js.map",
+    "static/css/2.b49007a3.chunk.css": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css",
+    "static/js/2.39567c92.chunk.js": "/personal-page-rebuild/static/js/2.39567c92.chunk.js",
+    "static/js/2.39567c92.chunk.js.map": "/personal-page-rebuild/static/js/2.39567c92.chunk.js.map",
+    "static/js/3.c8248c7e.chunk.js": "/personal-page-rebuild/static/js/3.c8248c7e.chunk.js",
+    "static/js/3.c8248c7e.chunk.js.map": "/personal-page-rebuild/static/js/3.c8248c7e.chunk.js.map",
+    "index.html": "/personal-page-rebuild/index.html",
+    "static/css/2.b49007a3.chunk.css.map": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css.map",
+    "static/css/main.c26271da.chunk.css.map": "/personal-page-rebuild/static/css/main.c26271da.chunk.css.map",
+    "static/js/2.39567c92.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.39567c92.chunk.js.LICENSE.txt",
+    "static/media/Chenyi.a7773a31.png": "/personal-page-rebuild/static/media/Chenyi.a7773a31.png",
+    "static/media/Resume.25de70a5.pdf": "/personal-page-rebuild/static/media/Resume.25de70a5.pdf",
+    "static/media/main.css": "/personal-page-rebuild/static/media/hero.3134a1ea.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.011c3454.js",
+    "static/css/2.b49007a3.chunk.css",
+    "static/js/2.39567c92.chunk.js",
+    "static/css/main.c26271da.chunk.css",
+    "static/js/main.4506cc70.chunk.js"
+  ]
+}
