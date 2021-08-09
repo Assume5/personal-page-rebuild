@@ -278,6 +278,11 @@ $animation-second: 1s;
                     width: 125px;
                 }
             }
+
+            @media (max-width: 576px) {
+                padding: 0px 15px;
+                margin: 0px 15px;
+            }
         }
     }
 }

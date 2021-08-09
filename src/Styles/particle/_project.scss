@@ -68,6 +68,12 @@ $container-second: 0.3s;
     .container {
         padding: 0 100px;
 
+        @media (max-width: 575px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+
         .project-desc {
             margin-top: 100px;
             flex: 0 0 100%;
