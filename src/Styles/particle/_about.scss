@@ -29,7 +29,8 @@
 
             @media (max-width: 576px) {
                 width: 60vmin;
-                height: 60vmin;                
+                height: 60vmin;        
+                margin-top: 50px        
             }
         }
 
@@ -54,6 +55,12 @@
             }
         }
 
+        @media (max-width: 576px) {
+            p {
+                font-size: 15px;
+            }
+        }
+
         .cv-button {
 
             @media (max-width: 576px) {
@@ -68,6 +75,7 @@
                 padding: 10px 20px;
                 transition: background .3s ease-in-out;
                 font-size: 20px;
+                margin-bottom: 50px;
     
                 &::before {
                     display: none;
@@ -80,7 +88,7 @@
     
                 svg {
                     margin-right: 10px;
-                }
+                }     
             }
         }
     }
