@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-page-rebuild/static/css/main.170bf522.chunk.css",
+    "main.css": "/personal-page-rebuild/static/css/main.01af4071.chunk.css",
     "main.js": "/personal-page-rebuild/static/js/main.0ba6be18.chunk.js",
     "main.js.map": "/personal-page-rebuild/static/js/main.0ba6be18.chunk.js.map",
     "runtime-main.js": "/personal-page-rebuild/static/js/runtime-main.011c3454.js",
@@ -12,7 +12,7 @@
     "static/js/3.c8248c7e.chunk.js.map": "/personal-page-rebuild/static/js/3.c8248c7e.chunk.js.map",
     "index.html": "/personal-page-rebuild/index.html",
     "static/css/2.b49007a3.chunk.css.map": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css.map",
-    "static/css/main.170bf522.chunk.css.map": "/personal-page-rebuild/static/css/main.170bf522.chunk.css.map",
+    "static/css/main.01af4071.chunk.css.map": "/personal-page-rebuild/static/css/main.01af4071.chunk.css.map",
     "static/js/2.b6334d68.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.b6334d68.chunk.js.LICENSE.txt",
     "static/media/Calculator.2fd866ee.svg": "/personal-page-rebuild/static/media/Calculator.2fd866ee.svg",
     "static/media/Chenyi.a7773a31.png": "/personal-page-rebuild/static/media/Chenyi.a7773a31.png",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.011c3454.js",
     "static/css/2.b49007a3.chunk.css",
     "static/js/2.b6334d68.chunk.js",
-    "static/css/main.170bf522.chunk.css",
+    "static/css/main.01af4071.chunk.css",
     "static/js/main.0ba6be18.chunk.js"
   ]
 }
