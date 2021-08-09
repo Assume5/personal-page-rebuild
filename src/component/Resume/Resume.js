@@ -36,6 +36,7 @@ export default function Resume() {
         "Jquery": 'intermediate',
         "MySql": 'intermediate',
         "Bottle": 'intermediate',
+        "Django": 'beginner',
         "SocketIO": 'beginner'
     }
     return (

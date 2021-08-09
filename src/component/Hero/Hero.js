@@ -10,7 +10,7 @@ export default function Hero() {
                     <a href="#project">Project</a>
                 </div>
                 <div className="scroll">
-                    <a href="#about"><h5><FontAwesomeIcon icon={faArrowCircleDown}/>Scroll Down</h5></a>
+                    <a href="#about"><h3><FontAwesomeIcon icon={faArrowCircleDown}/>Scroll Down</h3></a>
                 </div>
             </div>
     )

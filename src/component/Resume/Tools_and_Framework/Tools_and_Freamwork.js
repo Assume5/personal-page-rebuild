@@ -136,7 +136,7 @@ export default function Tools_and_Framework() {
                     animateOut='animate__flipOutX' duration={.5}>
                         <img src={Sana} alt=""/>  
                     </ScrollAnimation>
-                    <p>Sana Commerce</p>
+                    <p>Sana</p>
                 </div>
             </div>
   

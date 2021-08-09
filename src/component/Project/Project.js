@@ -57,7 +57,7 @@ export default class Project extends React.Component{
                 },
                 "Face-Detection": {
                     type: detection,
-                    type_text: "Food Delivery App", 
+                    type_text: "Detection App", 
                     desc: "Web-based application. Using React.js Express.js, PostgreSQL.",
                     detail: "Using react.js as front-end, express.js as backend, and PostgreSQL as database. By using Clarifai API when users input an image link, it will have a bounding box located in the image, the bounding box location will be the person's face.",
                     link: "",
@@ -83,7 +83,7 @@ export default class Project extends React.Component{
                     type: calculator,
                     type_text: "Calculator Application", 
                     desc: "Web-based application, using bootstrap",
-                    detail: "P!CK0 is an online food ordering/delivering app, allowing customers and drivers to freely choose their orders based on possible order choices. Without very low tipped order being sent to the driver. For more details, or how to use please visit the link below. For demo explanation are located in the caption, make sure you have caption on",
+                    detail: "This is a small project. It will let you calculate your course letter grade and College grade point. You can use it by clicking below",
                     link: "https://assume5.github.io/Grade-Calculator/",
                     demo: ""
                 }
@@ -130,7 +130,7 @@ export default class Project extends React.Component{
                                         </div>
                                                                     
                                         <div>
-                                            <p>{project}</p>
+                                            <p class="project-desc-text">{project}</p>
                                         </div>
                                     </ScrollAnimation>
                                 </div>

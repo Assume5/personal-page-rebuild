@@ -56,7 +56,7 @@ $container-second: 0.3s;
         h3::after {
             content: '';
             background: $background;
-            height:2px;
+            height:4px;
             margin-top: 5%;
             opacity: 0;
             animation: line $animation-second linear 1 normal forwards;
@@ -76,6 +76,10 @@ $container-second: 0.3s;
             overflow: hidden;
             transition: all 1s ease-out;
             cursor: pointer;
+            
+            .project-desc-text {
+                font-size: 18px;
+            }
 
             img {
                 width: 100%;
@@ -139,7 +143,7 @@ $container-second: 0.3s;
                 position: relative;
                 left:50%;
                 width: 0%;
-                height: 2px;
+                height: 4px;
                 animation: hr .8s linear 1 normal forwards;
             }
         }
@@ -178,7 +182,7 @@ $container-second: 0.3s;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            max-width: 475px;
+            max-width: 600px;
             transition: all $container-second ease-out;
             border: .5px solid $primaryColor;
             border-radius: 5px;
@@ -211,15 +215,15 @@ $container-second: 0.3s;
 
                 .type {
                     font-style: italic;
-                    font-size: 18px;
+                    font-size: 22px;
                 }
 
                 .desc {
-                    font-size: 10px;
+                    font-size: 16px;
                 }
 
                 .detail {
-                    font-size: 12px;
+                    font-size: 18px;
                 }
             }
 
@@ -243,6 +247,7 @@ $container-second: 0.3s;
                     width: auto;
                     margin: 0px 10px;
                     cursor: pointer;
+                    font-size: 20px;
 
                     &::before {
                         display: none;
@@ -255,7 +260,7 @@ $container-second: 0.3s;
         
                     svg {
                         margin-right: 10px;
-                        font-size: 16px;
+                        font-size: 20px;
                     }
                 }
             }

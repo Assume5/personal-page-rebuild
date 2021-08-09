@@ -14,7 +14,6 @@ export default class Modal extends React.Component {
 
 
     showModal = () => {
-        console.log(1)
         this.setState({show:true})
     }
 
@@ -39,7 +38,7 @@ export default class Modal extends React.Component {
                             <hr/>
                         </div>
                         <div className="text-container">
-                            <h5>{current_project}</h5>
+                            <h3>{current_project}</h3>
                             <p className="type">{modalDetail.type_text}</p>
                             <p className="desc">{modalDetail.desc}</p>
                             <p className="detail">{modalDetail.detail}</p>

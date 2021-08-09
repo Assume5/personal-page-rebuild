@@ -1,5 +1,5 @@
 //styles
-// import './dist/main.css'
+// import './dist/css/main.css'
 import './Styles/main.scss'
 import "animate.css/animate.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -86,9 +86,11 @@ $animation-second: 1s;
             position: relative;
             left:50%;
             width: 0%;
+            height: 3px;
             animation: hr $animation-second linear 1 normal forwards;
         }
     }
+
     padding: 150px 0px;
     background: #1e1e1e;
     min-height: 100vh;
@@ -119,7 +121,7 @@ $animation-second: 1s;
         h3::after {
             content: '';
             background: $background;
-            height:2px;
+            height: 4px;
             margin-top: 5%;
             opacity: 0;
             animation: line $animation-second linear 1 normal forwards;
@@ -145,7 +147,7 @@ $animation-second: 1s;
             }
 
             .time-line{
-                font-size: 12px;
+                font-size: 14px;
                 margin-bottom: 20px;
             }
 
@@ -155,10 +157,11 @@ $animation-second: 1s;
                 flex-wrap: wrap;
 
                 p {
-                    font-size: 11px;
+                    font-size: 15px;
 
                     &::before {
-                        content: '- ';
+                        content: '-';
+                        margin-right: 5px;
                     }
                 }
             }
@@ -181,7 +184,7 @@ $animation-second: 1s;
             padding: 0px;
             p {
                 margin-bottom: 5px;
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: bold;
             }
 
@@ -259,9 +262,11 @@ $animation-second: 1s;
         .image-container {
             padding: 0px 150px;
             padding-top: 50px;
+            margin: 0px 100px;
+
             .image {
                 width: 125px;
-                margin: 20px;
+                margin: 25px 50px;
                 padding: 0px;
                 
                 p {
