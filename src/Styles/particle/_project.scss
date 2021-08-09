@@ -1,0 +1,265 @@
+$background: linear-gradient(to right, #283c86, #45a247);
+$animation-second: 1s;
+$container-second: 0.3s;
+
+@keyframes line {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes hr {
+    from {
+      left:50%;
+      width:0%;
+    }
+    to {
+      left:0%;
+      width:100%;
+    }
+}
+
+.project {
+    padding: 150px 50px;
+    min-height: 100vh;
+
+    .header {
+
+        .animated {
+            h3::after {
+                display: none;
+                opacity: 0;
+            }
+        }
+
+        .animate__fadeIn {
+            h3::after {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        .animate__fadeOut {
+            h3::after {
+                display: block;
+                opacity: 1;
+            }
+        }
+        
+        h3::after {
+            content: '';
+            background: $background;
+            height:2px;
+            margin-top: 5%;
+            opacity: 0;
+            animation: line $animation-second linear 1 normal forwards;
+            display: none;
+
+        }
+    }
+
+    .container {
+        padding: 0 100px;
+
+        .project-desc {
+            margin-top: 100px;
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 50px;
+            overflow: hidden;
+            transition: all 1s ease-out;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                max-width: 120px;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+
+            &:hover {
+                -webkit-transform:scale(1.25); /* Safari and Chrome */
+                -moz-transform:scale(1.25); /* Firefox */
+                -ms-transform:scale(1.25); /* IE 9 */
+                -o-transform:scale(1.25); /* Opera */
+                 transform:scale(1.25);
+            }
+
+            @media (max-width: 575px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            @media (min-width: 575px) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            @media (min-width: 767px) {
+                flex: 0 0 33%;
+                max-width: 33%;
+            }
+
+            @media (min-width: 991px) {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+    }
+
+    .modal {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #151515;
+        transition: all $container-second ease-out;
+
+        .split-line {
+            margin: 15px 20px;
+            
+            hr  {
+                background: $background;
+                position: relative;
+                left:50%;
+                width: 0%;
+                height: 2px;
+                animation: hr .8s linear 1 normal forwards;
+            }
+        }
+
+        &.hidden {
+            visibility: hidden;
+            opacity: 0;
+            transition: all $container-second ease-out;
+
+        }
+
+        &.visible {
+            visibility: visible;
+            opacity: 1;
+            transition: all $container-second ease-out;
+
+        }
+
+        .close-button {
+            svg {
+                position: absolute;
+                top: 1.8rem;
+                right: 1.8rem;
+                width: 2em;
+                height: 2em;
+                color: $primaryColor;
+                cursor: pointer;
+    
+                &:hover {
+                    color: grey;
+                }
+            }
+        }
+
+        .modal-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 475px;
+            transition: all $container-second ease-out;
+            border: .5px solid $primaryColor;
+            border-radius: 5px;
+            opacity: 0;
+
+            &.hidden {
+                display: none;
+                display: block;
+            }
+
+            &.visible {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            img {
+                width: 45%;
+                display: flex;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            .text-container {
+                p {
+                    line-height: 1.5;
+                }
+
+                margin-bottom: 30px;
+                padding: 0 30px;
+
+                .type {
+                    font-style: italic;
+                    font-size: 18px;
+                }
+
+                .desc {
+                    font-size: 10px;
+                }
+
+                .detail {
+                    font-size: 12px;
+                }
+            }
+
+            .link-button {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+
+                @media (max-width: 576px) {
+                    display: flex;
+                    justify-content: center;            
+                }
+    
+                .button {
+                    all: unset;
+                    background-color: $primaryColor;
+                    border-radius: 5px;
+                    color: black !important;
+                    padding: 8px 20px;
+                    transition: background .3s ease-in-out;
+                    width: auto;
+                    margin: 0px 10px;
+                    cursor: pointer;
+
+                    &::before {
+                        display: none;
+                    }
+        
+                    &:hover {
+                        background: transparent;
+                        color: $primaryColor !important;
+                    }
+        
+                    svg {
+                        margin-right: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+    }
+}

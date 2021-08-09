@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: fixed;
+    width: 100%;
+    transition: all 1s ease-out;
+    z-index: 1;
+    &.hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    a {
+        z-index: 1;
+        font-size: 12px;
+        margin: 10px 10px;
+    }
+}

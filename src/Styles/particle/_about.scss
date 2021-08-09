@@ -1,0 +1,95 @@
+.about {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    .avatar {
+
+        img {
+            position: relative;
+            border: 1.6rem solid rgba(255, 255, 255, 0.02);
+            border-radius: 50%;
+            width: 25vmin;
+            height: 25vmin;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (min-width: 767px) and (max-width: 1025px) {
+                width: 20vmin;
+                height: 20vmin;                
+            }
+
+            @media (max-width: 576px) {
+                width: 60vmin;
+                height: 60vmin;                
+            }
+        }
+
+        .social {
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+
+            svg {
+                font-size: 40px;
+                padding: 0px 5px;
+            }
+        }
+    }
+
+    .desc {
+        h3, p {
+            margin-bottom: 20px;
+
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+
+        .cv-button {
+
+            @media (max-width: 576px) {
+                display: flex;
+                justify-content: center;            
+            }
+
+            .cv-download {
+                background-color: $primaryColor;
+                border-radius: 5px;
+                color: black !important;
+                padding: 10px 20px;
+                transition: background .3s ease-in-out;
+    
+                &::before {
+                    display: none;
+                }
+    
+                &:hover {
+                    background: black;
+                    color: $primaryColor !important;
+                }
+    
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        h3 {
+            margin-top: 50px;
+        }
+         
+        flex-direction: column;  
+        padding: 0px 15px;       
+    }
+}

@@ -1,0 +1,42 @@
+.hero {
+    background-image: url('../../component/Hero/img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    .scroll {
+        display: flex;
+        width: 100%;
+         justify-content: center;
+        position: absolute;
+        bottom: 0;
+        padding-top:90%;
+
+        svg {
+            margin-right: 20px;
+            font-size: 1em;
+            -webkit-animation: top-down 1s infinite  alternate;
+            animation: top-down 1s infinite  alternate;
+        }
+    }
+
+    .hero-nav {
+
+        a {
+            z-index: 1;
+            font-size: 12px;
+            margin: 0 10px;
+            margin-top: 20px;
+        }
+    }
+}
+@-webkit-keyframes top-down {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes top-down {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}

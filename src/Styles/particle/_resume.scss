@@ -1,0 +1,278 @@
+$background: linear-gradient(to right, #283c86, #45a247);
+$animation-second: 1s;
+@keyframes line {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes advance {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes intermediate {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 75%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes basic {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 50%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes beginner {
+    from {
+        width: 0%;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        width: 25%;
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes hr {
+    from {
+      left:50%;
+      width:0%;
+    }
+    to {
+      left:0%;
+      width:100%;
+    }
+}
+
+.resume {
+
+    .split-line {
+        padding: 25px 0px;
+
+        hr  {
+            background: $background;
+            position: relative;
+            left:50%;
+            width: 0%;
+            animation: hr $animation-second linear 1 normal forwards;
+        }
+    }
+    padding: 150px 0px;
+    background: #1e1e1e;
+    min-height: 100vh;
+
+    .header {
+
+        .animated {
+            h3::after {
+                display: none;
+                opacity: 0;
+            }
+        }
+
+        .animate__fadeIn {
+            h3::after {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        .animate__fadeOut {
+            h3::after {
+                display: block;
+                opacity: 1;
+            }
+        }
+        
+        h3::after {
+            content: '';
+            background: $background;
+            height:2px;
+            margin-top: 5%;
+            opacity: 0;
+            animation: line $animation-second linear 1 normal forwards;
+            display: none;
+
+        }
+    }
+
+    .education {
+        margin: 0px;
+        padding: 0px;
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        .desc {
+            padding: 0px;
+
+            
+            .major {
+                font-weight: bold;
+            }
+
+            .time-line{
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            .course {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                p {
+                    font-size: 11px;
+
+                    &::before {
+                        content: '- ';
+                    }
+                }
+            }
+
+            @media (max-width: 567px) {
+                padding: 0px 20px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+
+                .course {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .skill {
+        .skill-box {
+            padding: 0px;
+            p {
+                margin-bottom: 5px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .animated {
+                .bar.advance::before, .bar.intermediate::before, .bar.basic::before, .bar.beginner::before {
+                    display: none;
+                    opacity: 0;
+                }
+            }
+    
+            .animate__fadeIn {
+                .bar.advance::before, .bar.intermediate::before, .bar.basic::before, .bar.beginner::before {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+    
+            .animate__fadeOut {
+                .bar.advance::before, .bar.intermediate::before, .bar.basic::before, .bar.beginner::before {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+
+            .bar {
+                background: $primaryColor;
+                height: 10px;
+                position: relative;
+                border-radius: 3px;
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                &.advance::before {
+                    content: '';
+                    width: 100%;
+                    display: none;
+                    height: 100%;
+                    background: $background;
+                    animation: advance $animation-second linear 1 normal forwards;
+                }
+
+                &.intermediate::before {
+                    content: '';
+                    width: 75%;
+                    display: none;
+                    height: 100%;
+                    background: $background;
+                    animation: intermediate $animation-second linear 1 normal forwards;
+                }
+
+                &.basic::before {
+                    content: '';
+                    width: 50%;
+                    display: none;
+                    height: 100%;
+                    background: $background;
+                    animation: basic $animation-second linear 1 normal forwards;
+
+                }
+
+                &.beginner::before {
+                    content: '';
+                    width: 25%;
+                    display: none;
+                    height: 100%;
+                    background: $background;
+                    animation: beginner $animation-second linear 1 normal forwards;
+                }
+            }
+        }
+    }
+
+    .other-tools-framework {
+
+        .image-container {
+            padding: 0px 150px;
+            padding-top: 50px;
+            .image {
+                width: 125px;
+                margin: 20px;
+                padding: 0px;
+                
+                p {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+
+                img {
+                    width: 125px;
+                }
+            }
+        }
+    }
+}
