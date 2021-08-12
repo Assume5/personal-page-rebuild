@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/personal-page-rebuild/static/css/main.e4fa06cb.chunk.css",
-    "main.js": "/personal-page-rebuild/static/js/main.0ba6be18.chunk.js",
-    "main.js.map": "/personal-page-rebuild/static/js/main.0ba6be18.chunk.js.map",
+    "main.js": "/personal-page-rebuild/static/js/main.7a908a6a.chunk.js",
+    "main.js.map": "/personal-page-rebuild/static/js/main.7a908a6a.chunk.js.map",
     "runtime-main.js": "/personal-page-rebuild/static/js/runtime-main.011c3454.js",
     "runtime-main.js.map": "/personal-page-rebuild/static/js/runtime-main.011c3454.js.map",
     "static/css/2.b49007a3.chunk.css": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css",
-    "static/js/2.b6334d68.chunk.js": "/personal-page-rebuild/static/js/2.b6334d68.chunk.js",
-    "static/js/2.b6334d68.chunk.js.map": "/personal-page-rebuild/static/js/2.b6334d68.chunk.js.map",
+    "static/js/2.9f8f3e2e.chunk.js": "/personal-page-rebuild/static/js/2.9f8f3e2e.chunk.js",
+    "static/js/2.9f8f3e2e.chunk.js.map": "/personal-page-rebuild/static/js/2.9f8f3e2e.chunk.js.map",
     "static/js/3.c8248c7e.chunk.js": "/personal-page-rebuild/static/js/3.c8248c7e.chunk.js",
     "static/js/3.c8248c7e.chunk.js.map": "/personal-page-rebuild/static/js/3.c8248c7e.chunk.js.map",
     "index.html": "/personal-page-rebuild/index.html",
     "static/css/2.b49007a3.chunk.css.map": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css.map",
     "static/css/main.e4fa06cb.chunk.css.map": "/personal-page-rebuild/static/css/main.e4fa06cb.chunk.css.map",
-    "static/js/2.b6334d68.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.b6334d68.chunk.js.LICENSE.txt",
+    "static/js/2.9f8f3e2e.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.9f8f3e2e.chunk.js.LICENSE.txt",
     "static/media/Calculator.2fd866ee.svg": "/personal-page-rebuild/static/media/Calculator.2fd866ee.svg",
     "static/media/Chenyi.a7773a31.png": "/personal-page-rebuild/static/media/Chenyi.a7773a31.png",
     "static/media/Django.0e090762.png": "/personal-page-rebuild/static/media/Django.0e090762.png",
@@ -39,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.011c3454.js",
     "static/css/2.b49007a3.chunk.css",
-    "static/js/2.b6334d68.chunk.js",
+    "static/js/2.9f8f3e2e.chunk.js",
     "static/css/main.e4fa06cb.chunk.css",
-    "static/js/main.0ba6be18.chunk.js"
+    "static/js/main.7a908a6a.chunk.js"
   ]
 }
