@@ -1,42 +1,73 @@
 .hero {
-    background-image: url('../../component/Hero/img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     min-width: 100vw;
     min-height: 100vh;
+    -webkit-animation: backgroundColor 2.5s infinite alternate ease-out;
+    animation: backgroundColor 2.5s infinite alternate ease-out;
+    display: flex;
+    justify-content: center;
+
+    .particles {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 0;
+    }
     
     .scroll {
         display: flex;
         width: 100%;
-         justify-content: center;
+        justify-content: center;
         position: absolute;
         bottom: 0;
-        padding-top:90%;
 
         svg {
             margin-right: 20px;
             font-size: 1em;
-            -webkit-animation: top-down 1s infinite  alternate;
-            animation: top-down 1s infinite  alternate;
+        }
+
+        a {
+            &::before {
+                display: none;
+            }   
         }
     }
 
     .hero-nav {
+      position: absolute;
 
-        a {
-            z-index: 1;
-            font-size: 20px;
-            margin: 0 10px;
-            margin-top: 20px;
-        }
+      a {
+          z-index: 1;
+          font-size: 20px;
+          margin: 0 10px;
+          margin-top: 20px;
+      }
     }
 }
-@-webkit-keyframes top-down {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-@keyframes top-down {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+
+@keyframes backgroundColor {
+    0% {
+      background: #201D37;
+    }
+    25% {
+      background: #272343;
+    }
+    50% {
+      background: #2f2a50;
+    }
+    75% {
+      background: #37315E;
+    }
+    100% {
+      background: #3F386B;
+    }
 }
