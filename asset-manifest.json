@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/personal-page-rebuild/static/css/main.cc1fa988.chunk.css",
-    "main.js": "/personal-page-rebuild/static/js/main.b77cb9d1.chunk.js",
-    "main.js.map": "/personal-page-rebuild/static/js/main.b77cb9d1.chunk.js.map",
+    "main.css": "/personal-page-rebuild/static/css/main.fbf6adcb.chunk.css",
+    "main.js": "/personal-page-rebuild/static/js/main.4acf446b.chunk.js",
+    "main.js.map": "/personal-page-rebuild/static/js/main.4acf446b.chunk.js.map",
     "runtime-main.js": "/personal-page-rebuild/static/js/runtime-main.c033e0a5.js",
     "runtime-main.js.map": "/personal-page-rebuild/static/js/runtime-main.c033e0a5.js.map",
     "static/css/2.b49007a3.chunk.css": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css",
-    "static/js/2.accbaadc.chunk.js": "/personal-page-rebuild/static/js/2.accbaadc.chunk.js",
-    "static/js/2.accbaadc.chunk.js.map": "/personal-page-rebuild/static/js/2.accbaadc.chunk.js.map",
+    "static/js/2.b0af8dfe.chunk.js": "/personal-page-rebuild/static/js/2.b0af8dfe.chunk.js",
+    "static/js/2.b0af8dfe.chunk.js.map": "/personal-page-rebuild/static/js/2.b0af8dfe.chunk.js.map",
     "static/js/3.88e3589e.chunk.js": "/personal-page-rebuild/static/js/3.88e3589e.chunk.js",
     "static/js/3.88e3589e.chunk.js.map": "/personal-page-rebuild/static/js/3.88e3589e.chunk.js.map",
     "index.html": "/personal-page-rebuild/index.html",
     "static/css/2.b49007a3.chunk.css.map": "/personal-page-rebuild/static/css/2.b49007a3.chunk.css.map",
-    "static/css/main.cc1fa988.chunk.css.map": "/personal-page-rebuild/static/css/main.cc1fa988.chunk.css.map",
-    "static/js/2.accbaadc.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.accbaadc.chunk.js.LICENSE.txt",
+    "static/css/main.fbf6adcb.chunk.css.map": "/personal-page-rebuild/static/css/main.fbf6adcb.chunk.css.map",
+    "static/js/2.b0af8dfe.chunk.js.LICENSE.txt": "/personal-page-rebuild/static/js/2.b0af8dfe.chunk.js.LICENSE.txt",
     "static/media/Calculator.2fd866ee.svg": "/personal-page-rebuild/static/media/Calculator.2fd866ee.svg",
     "static/media/Chenyi.a7773a31.png": "/personal-page-rebuild/static/media/Chenyi.a7773a31.png",
     "static/media/Django.0e090762.png": "/personal-page-rebuild/static/media/Django.0e090762.png",
@@ -38,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.c033e0a5.js",
     "static/css/2.b49007a3.chunk.css",
-    "static/js/2.accbaadc.chunk.js",
-    "static/css/main.cc1fa988.chunk.css",
-    "static/js/main.b77cb9d1.chunk.js"
+    "static/js/2.b0af8dfe.chunk.js",
+    "static/css/main.fbf6adcb.chunk.css",
+    "static/js/main.4acf446b.chunk.js"
   ]
 }
