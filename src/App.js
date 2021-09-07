@@ -11,6 +11,7 @@ import ScrollTop from './component/ScrollTop/ScrollTop';
 import Nav from './component/Nav/Nav'
 import Resume from './component/Resume/Resume';
 import Project from './component/Project/Project';
+import Footer from './component/Footer/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Resume/>
       <Project/>
       <ScrollTop/>
+      <Footer/>
     </div>
   );
 }

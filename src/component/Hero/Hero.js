@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
 import Particles from 'react-particles-js';
 import Typical from 'react-typical'
 
