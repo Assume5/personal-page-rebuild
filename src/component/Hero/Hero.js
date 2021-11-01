@@ -11,7 +11,7 @@ export default function Hero() {
                     <a href="#resume">Resume</a>
                     <a href="#project">Project</a>
                 </div>
-                <div class="text">
+                <div className="text">
                     <h1>Hi, I'm Chenyi</h1><br/>
                     <Typical
                     steps={['I am a', 1000, 'I am a Developer', 1000, 'I am a Software Engineer', 1000, 'I am a Web Developer', 1000]}
@@ -22,7 +22,7 @@ export default function Hero() {
                 <div className="scroll">
                     <a href="#about">
                         <h3>
-                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="mouse-alt" class="svg-inline--fa fa-mouse-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="mouse-alt" className="svg-inline--fa fa-mouse-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                 <path fill="currentColor" d="M224 0h-64A160 160 0 0 0 0 160v192a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V160A160 160 0 0 0 224 0zm112 352a112.12 112.12 0 0 1-112 112h-64A112.12 112.12 0 0 1 48 352V160A112.12 112.12 0 0 1 160 48h64a112.12 112.12 0 0 1 112 112zM192 96a32 32 0 0 0-32 32v32a32 32 0 0 0 64 0v-32a32 32 0 0 0-32-32z"></path>
                             </svg>
                             Scroll Down

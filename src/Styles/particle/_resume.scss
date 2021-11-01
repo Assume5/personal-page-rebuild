@@ -255,6 +255,121 @@ $animation-second: 1s;
                 }
             }
         }
+
+        .skill-collapse {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .skill-container {
+                width: 45%;
+                transition: transform .3s ease;
+                margin-top: 30px;
+                background-color: #212121;
+                border-radius: 5px;
+                place-self: baseline;
+
+                &:active {
+                    transform: scale(.95);
+                }
+
+                &.collapse {
+                    &-show {
+                        svg {
+                            transform: rotate(-180deg);
+                            transition: transform .3s ease-out;
+                        }
+                    }
+
+                    &-hide {
+                        svg {
+                            transform: rotate(0deg);
+                            transition: transform .3s ease-out;
+                        }
+                    }
+                }
+
+                .title-container {
+                    cursor: pointer;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .title {
+                        display: flex;
+                        width: 80%;
+
+                        .text {
+                            flex-grow: 1;
+                        }
+
+                        img {
+                            margin: 0px 30px;
+
+                            @media (max-width: 567px) {
+                                margin: 0px 20px;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 40px;
+                    }
+
+                    svg {
+                        color: #fff;
+                        font-size: 24px;
+                        margin-right: 25px;
+                    }
+
+                    h4 {
+                        font-size: 18px;
+                    }
+
+                    h5 {
+                        font-size: 16px;
+                    }
+
+                    h4, h5 {
+                        color: white;
+                        margin: 15px 0px;
+                    }
+                }
+
+                .skill-items {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all 0.2s ease-out;
+
+                    .item {
+                        padding: 15px 30px;
+                        border-bottom: 1px solid grey;
+
+                        &:nth-child(1) {
+                            border-top: 1px solid grey;
+                        }
+
+                        &:last-child {
+                            border: unset
+                        }
+
+                        p {
+                            color: white;
+                        }
+
+                        .bar {
+                            background-color: black;
+                        }
+                    }
+                }
+
+                @media (max-width:992px) {
+                    width: 85%;
+                }
+            }
+        }
     }
 
     .other-tools-framework {

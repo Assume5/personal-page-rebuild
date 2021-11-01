@@ -130,7 +130,7 @@ export default class Project extends React.Component{
                                         </div>
                                                                     
                                         <div>
-                                            <p class="project-desc-text">{project}</p>
+                                            <p className="project-desc-text">{project}</p>
                                         </div>
                                     </ScrollAnimation>
                                 </div>

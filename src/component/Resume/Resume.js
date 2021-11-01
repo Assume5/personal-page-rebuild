@@ -1,7 +1,14 @@
 import Education from "./Education/Education";
 import Skill from "./Skill/Skill";
-import Tools_and_Framework from "./Tools_and_Framework/Tools_and_Freamwork";
+import ToolsAndFramework from "./Tools_and_Framework/ToolsAndFreamwork";
 import ScrollAnimation from "react-animate-on-scroll";
+import language from './imgs/code.svg'
+import frontend from './imgs/arrow.svg'
+import backend from './imgs/server.svg'
+import db from './imgs/database.svg'
+import mobile from './imgs/mobile.svg'
+import blockchain from './imgs/bitcoin.svg'
+
 export default function Resume() {
     let education = {
         "University At Buffalo" : {
@@ -23,21 +30,72 @@ export default function Resume() {
     // basic
     // intermediate 
     // advanced 
+    // let skills = {
+    //     "Javascript": 'intermediate',
+    //     "Scala": 'basic',
+    //     "C/C++": 'beginner',
+    //     "Python": 'basic',
+    //     "Solidity": 'beginner',
+    //     "ReactJS": 'intermediate',
+    //     "HTML": 'intermediate',
+    //     "CSS/SASS": 'intermediate',
+    //     "Bootstrap": 'intermediate',
+    //     "Jquery": 'intermediate',
+    //     "MySql": 'intermediate',
+    //     "Bottle": 'intermediate',
+    //     "Django": 'beginner',
+    //     "SocketIO": 'beginner'
+    // }
+
     let skills = {
-        "Javascript": 'intermediate',
-        "Scala": 'basic',
-        "C/C++": 'beginner',
-        "Python": 'basic',
-        "Solidity": 'beginner',
-        "ReactJS": 'intermediate',
-        "HTML": 'intermediate',
-        "CSS/SASS": 'intermediate',
-        "Bootstrap": 'intermediate',
-        "Jquery": 'intermediate',
-        "MySql": 'intermediate',
-        "Bottle": 'intermediate',
-        "Django": 'beginner',
-        "SocketIO": 'beginner'
+        "Programming Language": {
+            "Javascript": 'intermediate',
+            "Scala": 'basic',
+            "C/C++": 'basic',
+            "Python": 'basic',
+            "img": language
+
+        },
+        "Frontend": {
+            "ReactJS": 'intermediate',
+            "HTML": 'intermediate',
+            "CSS/SASS": 'intermediate',
+            "Bootstrap": 'intermediate',
+            "Jquery": 'intermediate',
+            "Sana Commerce": "intermediate",
+            "WordPress": "basic",
+            "img": frontend
+
+        },
+        "Backend": {
+            "Bottle": 'intermediate',
+            "Flask": "basic",
+            "Expressjs": 'basic',
+            "Django": 'beginner',
+            "SocketIO": 'beginner',
+            "img": backend
+        },
+        "Databases": {
+            "MySql": 'intermediate',
+            "Mongo": "beginner",
+            "img": db
+        },
+        "Mobile": {
+            "ReactNative": 'basic',
+            "Android Studio": "beginner",
+            "Expo": "beginner",
+            "img": mobile
+        },
+        "Blockchain": {
+            "Solidity": 'beginner',
+            "Truffle": 'beginner',
+            "Ganache": 'beginner',
+            "img": blockchain
+        }
+
+
+        
+
     }
     return (
         <div className="resume" id="resume">
@@ -48,14 +106,14 @@ export default function Resume() {
                     <hr/>
                 </ScrollAnimation>
             </div>
-            <Skill skills={skills}/>
+            <Skill skills={skills} />
             <div className="split-line">
                 <ScrollAnimation animateIn='animate__fadeIn '
                 animateOut='animate__fadeOut' duration={1}>
                     <hr/>
                 </ScrollAnimation>
             </div>
-            <Tools_and_Framework/>
+            <ToolsAndFramework/>
         </div>
     )
 }

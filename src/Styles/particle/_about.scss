@@ -9,6 +9,11 @@
     overflow: hidden;
 
     .avatar {
+        .img-avatar {
+            @media (max-width:567px) {
+                animation-duration: 1s !important;
+            }
+        }
 
         img {
             position: relative;
@@ -51,6 +56,20 @@
                 animation-delay: 2s;
             }
 
+            @media (max-width:567px) {
+                .email {
+                    animation-delay: .3s;
+                }
+    
+                .github {
+                    animation-delay: .5s;
+                }
+    
+                .linkedin {
+                    animation-delay: .8s;
+                }
+            }
+
             svg {
                 font-size: 40px;
                 padding: 0px 5px;
@@ -81,15 +100,19 @@
 
         @media (max-width: 576px) {
             .name {
-                animation-delay: 1.5s;
+                animation-delay: .8s;
             }
 
             .position {
-                animation-delay: 2s;
+                animation-delay: 1s;
             }
 
             .text {
-                animation-delay: 2.5s;
+                animation-delay: 1.2s;
+            }
+
+            .button {
+                animation-delay: 1.4s; 
             }
 
         }

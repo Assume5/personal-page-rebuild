@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default class Modal extends React.Component {
@@ -20,9 +20,8 @@ export default class Modal extends React.Component {
     render() {
         let {modalDetail, show, img, closeModal, current_project} = this.props
         let modal = document.querySelector('.modal');
-        console.log(modalDetail)
         return (
-            <div className={show ? 'modal visible' : 'modal hidden'}
+            <div className={`modal ${show ? 'visible' : 'hidden'}`}
             onClick= {(e) => { if(e.target === modal ) {modal.classList = 'modal hidden'; closeModal() }}}
             >
                 <div className="close-button">
@@ -30,11 +29,11 @@ export default class Modal extends React.Component {
                 </div>
                 {
                     
-                    <div className={show && 'modal-container animate__animated animate__zoomIn visible animate__faster'}>
+                    <div className={show ? 'modal-container animate__animated animate__zoomIn visible animate__faster' : undefined}>
                         <div>
                             <img src={img} alt=""/>
                         </div>
-                        <div className={show && "split-line"}>
+                        <div className={show ? "split-line" : undefined}>
                             <hr/>
                         </div>
                         <div className="text-container">
