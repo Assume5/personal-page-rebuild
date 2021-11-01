@@ -55,7 +55,7 @@ export default function Skill({skills}) {
                                                 <img src={item['img']} alt=""/>
                                                 <div className="text">
                                                     <h4>{skill}</h4>
-                                                    <h5>Total {Object.keys(item).length} skills</h5>
+                                                    <h5>Total {Object.keys(item).length-1} skills</h5>
                                                 </div>
                                             </div>
                                             <FontAwesomeIcon icon={faChevronDown}/>
