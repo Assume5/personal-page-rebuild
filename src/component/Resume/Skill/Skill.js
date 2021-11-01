@@ -72,10 +72,7 @@ export default function Skill({skills}) {
                                                             )
                                                         }
                                                         else {
-                                                            return (
-                                                                <div key={key}>
-                                                                </div>
-                                                            )
+                                                            
                                                         }
                                                     })
                                                 }
