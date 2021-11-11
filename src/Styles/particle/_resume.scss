@@ -186,6 +186,10 @@ $animation-second: 1s;
                 margin-bottom: 5px;
                 font-size: 18px;
                 font-weight: bold;
+
+                @media (max-width: 567px) {
+                    font-size: 14px;
+                }
             }
 
             .animated {
@@ -326,10 +330,18 @@ $animation-second: 1s;
 
                     h4 {
                         font-size: 18px;
+
+                        @media (max-width: 567px) {
+                            font-size: 14px;
+                        }
                     }
 
                     h5 {
                         font-size: 16px;
+
+                        @media (max-width: 567px) {
+                            font-size: 12px;
+                        }
                     }
 
                     h4, h5 {
