@@ -15,13 +15,21 @@ export default class Project extends React.Component{
         super()
         this.state = {
             projects : {
+                "PICKO-Dapp": {
+                    type: blockchain,
+                    type_text: "Blockchain Food Delivery App", 
+                    desc: "Blockchain based web application, built with React Typescript and Leaflet Open source map.",
+                    detail: "PICKO-Dapp is an online food ordering/delivering app, allowing customers and drivers to freely choose their orders based on possible order choices. Without very low tipped order being sent to the driver.",
+                    link: "https://github.com/Assume5/PICKO-Dapp",
+                    demo: ""
+                },
                 "WEAR0": {
                     type: ecommerce,
-                    type_text: "Ecommerce App", 
+                    type_text: "eCommerce App", 
                     desc: "Web-based application, using MySQL as DB and Express.js as server.",
-                    detail: "Currently developing front-end. For more details, or how to use please visit the link below.",
+                    detail: "WEARO is an online eCommerce site, allowing customers to purchases fashion through this site.",
                     link: "https://github.com/Assume5/WEAR0",
-                    demo: ""
+                    demo: "https://www.youtube.com/watch?v=dfsVt_zCuMM"
                 },
                 "P!CK0": {
                     type: delivery_app,

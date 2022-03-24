@@ -30,25 +30,10 @@ export default function Resume() {
     // basic
     // intermediate 
     // advanced 
-    // let skills = {
-    //     "Javascript": 'intermediate',
-    //     "Scala": 'basic',
-    //     "C/C++": 'beginner',
-    //     "Python": 'basic',
-    //     "Solidity": 'beginner',
-    //     "ReactJS": 'intermediate',
-    //     "HTML": 'intermediate',
-    //     "CSS/SASS": 'intermediate',
-    //     "Bootstrap": 'intermediate',
-    //     "Jquery": 'intermediate',
-    //     "MySql": 'intermediate',
-    //     "Bottle": 'intermediate',
-    //     "Django": 'beginner',
-    //     "SocketIO": 'beginner'
-    // }
 
     let skills = {
         "Programming Language": {
+            "TypeScript": 'intermediate',
             "Javascript": 'intermediate',
             "Scala": 'basic',
             "C/C++": 'basic',
@@ -68,9 +53,9 @@ export default function Resume() {
 
         },
         "Backend": {
+            "Expressjs": 'intermediate',
             "Bottle": 'intermediate',
             "Flask": "basic",
-            "Expressjs": 'basic',
             "Django": 'beginner',
             "SocketIO": 'beginner',
             "img": backend
@@ -92,9 +77,6 @@ export default function Resume() {
             "Ganache": 'beginner',
             "img": blockchain
         }
-
-
-        
 
     }
     return (
