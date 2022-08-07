@@ -18,7 +18,7 @@ export default class Project extends React.Component {
                 "PICKO REBUILD": {
                     type: delivery_app,
                     type_text: "Web Based Food Delivery App",
-                    desc: "React Typescript, Leaflet Map, Vite, SCSS/SASS, Express TS, PostgreSQL, Prisma, Json Web Token, PM2, Cluster, Socket.io",
+                    desc: "React Typescript, Leaflet Map, Vite, SCSS/SASS, Express TS, PostgreSQL, Prisma, Json Web Token, PM2, Cluster, Socket.io, S3 Bucket",
                     detail: "PICKO-Dapp is an online food ordering/delivering app, allowing customers and drivers to freely choose their orders based on possible order choices. Without very low tipped order being sent to the driver.",
                     link: "https://github.com/Assume5/PICKO-Dapp",
                     demo: "https://www.youtube.com/watch?v=KInTGaoc7yg",
@@ -27,7 +27,7 @@ export default class Project extends React.Component {
                 WEAR0: {
                     type: ecommerce,
                     type_text: "eCommerce App",
-                    desc: "MySQL, Express JS, SCSS/SASS",
+                    desc: "React JS, MySQL, Express JS, SCSS/SASS",
                     detail: "WEARO is an online eCommerce site, allowing customers to purchases fashion through this site.",
                     link: "https://github.com/Assume5/WEAR0",
                     demo: "https://www.youtube.com/watch?v=dfsVt_zCuMM",
