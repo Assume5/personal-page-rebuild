@@ -17,12 +17,12 @@ $container-second: 0.3s;
 
 @keyframes hr {
     from {
-      left:50%;
-      width:0%;
+        left: 50%;
+        width: 0%;
     }
     to {
-      left:0%;
-      width:100%;
+        left: 0%;
+        width: 100%;
     }
 }
 
@@ -31,7 +31,6 @@ $container-second: 0.3s;
     min-height: 100vh;
 
     .header {
-
         .animated {
             h3::after {
                 display: none;
@@ -52,16 +51,15 @@ $container-second: 0.3s;
                 opacity: 1;
             }
         }
-        
+
         h3::after {
-            content: '';
+            content: "";
             background: $background;
-            height:4px;
+            height: 4px;
             margin-top: 5%;
             opacity: 0;
             animation: line $animation-second linear 1 normal forwards;
             display: none;
-
         }
     }
 
@@ -82,7 +80,7 @@ $container-second: 0.3s;
             overflow: hidden;
             transition: all 1s ease-out;
             cursor: pointer;
-            
+
             .project-desc-text {
                 font-size: 18px;
             }
@@ -99,11 +97,11 @@ $container-second: 0.3s;
             }
 
             &:hover {
-                -webkit-transform:scale(1.25); /* Safari and Chrome */
-                -moz-transform:scale(1.25); /* Firefox */
-                -ms-transform:scale(1.25); /* IE 9 */
-                -o-transform:scale(1.25); /* Opera */
-                 transform:scale(1.25);
+                -webkit-transform: scale(1.25); /* Safari and Chrome */
+                -moz-transform: scale(1.25); /* Firefox */
+                -ms-transform: scale(1.25); /* IE 9 */
+                -o-transform: scale(1.25); /* Opera */
+                transform: scale(1.25);
             }
 
             @media (max-width: 575px) {
@@ -137,26 +135,20 @@ $container-second: 0.3s;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #151515;
         transition: all $container-second ease-out;
 
-        @media (max-width: 567px) {
-            align-items: start;
-            padding-top: 100px;
-
-        }
-
         .split-line {
             margin: 15px 20px;
-            
-            hr  {
+
+            hr {
                 background: $background;
                 position: relative;
-                left:50%;
+                left: 50%;
                 width: 0%;
                 height: 4px;
-                animation: hr .8s linear 1 normal forwards;
+                animation: hr 0.8s linear 1 normal forwards;
             }
         }
 
@@ -164,26 +156,30 @@ $container-second: 0.3s;
             visibility: hidden;
             opacity: 0;
             transition: all $container-second ease-out;
-
         }
 
         &.visible {
             visibility: visible;
             opacity: 1;
             transition: all $container-second ease-out;
-
         }
 
         .close-button {
+            z-index: 999;
             svg {
                 position: absolute;
-                top: 1.8rem;
-                right: 1.8rem;
+                top: 1rem;
+                right: 1rem;
                 width: 2em;
                 height: 2em;
                 color: $primaryColor;
                 cursor: pointer;
-    
+
+                @media (max-width: 567px) {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+
                 &:hover {
                     color: grey;
                 }
@@ -193,12 +189,18 @@ $container-second: 0.3s;
         .modal-container {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             max-width: 600px;
             transition: all $container-second ease-out;
-            border: .5px solid $primaryColor;
+            border: 0.5px solid $primaryColor;
             border-radius: 5px;
             opacity: 0;
+            justify-content: center;
+            overflow-y: auto;
+
+            @media (max-width: 567px) {
+                max-height: 95%;
+                border: none;
+            }
 
             &.hidden {
                 display: none;
@@ -238,6 +240,16 @@ $container-second: 0.3s;
 
                 .desc {
                     font-size: 16px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px 5px;
+
+                    span {
+                        background: white;
+                        padding: 3px 10px;
+                        color: black;
+                        border-radius: 5px;
+                    }
                 }
 
                 .detail {
@@ -249,11 +261,11 @@ $container-second: 0.3s;
                         font-style: italic;
                         font-size: 18px;
                     }
-    
+
                     .desc {
                         font-size: 12px;
                     }
-    
+
                     .detail {
                         font-size: 14px;
                     }
@@ -267,16 +279,16 @@ $container-second: 0.3s;
 
                 @media (max-width: 576px) {
                     display: flex;
-                    justify-content: center;            
+                    justify-content: center;
                 }
-    
+
                 .button {
                     all: unset;
                     background-color: $primaryColor;
                     border-radius: 5px;
                     color: black !important;
                     padding: 8px 20px;
-                    transition: background .3s ease-in-out;
+                    transition: background 0.3s ease-in-out;
                     width: auto;
                     margin: 0px 10px;
                     cursor: pointer;
@@ -285,19 +297,18 @@ $container-second: 0.3s;
                     &::before {
                         display: none;
                     }
-        
+
                     &:hover {
                         background: transparent;
                         color: $primaryColor !important;
                     }
-        
+
                     svg {
                         margin-right: 10px;
                         font-size: 20px;
                     }
                 }
             }
-
         }
     }
 }

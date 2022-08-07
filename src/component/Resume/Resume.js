@@ -55,18 +55,20 @@ export default function Resume() {
         "Backend": {
             "Expressjs": 'intermediate',
             "Bottle": 'intermediate',
+            "Prisma": "basic",
             "Flask": "basic",
             "Django": 'beginner',
-            "SocketIO": 'beginner',
+            "SocketIO": 'beginner',            
             "img": backend
         },
         "Databases": {
             "MySql": 'intermediate',
             "Mongo": "beginner",
+            "PostgreSQL": "beginner",
             "img": db
         },
         "Mobile": {
-            "ReactNative": 'basic',
+            "React Native": 'basic',
             "Android Studio": "beginner",
             "Expo": "beginner",
             "img": mobile

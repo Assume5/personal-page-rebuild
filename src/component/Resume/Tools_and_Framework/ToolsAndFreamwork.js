@@ -7,8 +7,18 @@ import Metamask from './imgs/Metamask.png';
 import Nodejs from './imgs/nodejs.png';
 import PhaserIO from './imgs/PhaserIO.png';
 import PlotlyJS from './imgs/PlotlyJS.jpg';
+import Vite from './imgs/vite.png'
+import jwt from './imgs/jwt.png';
+import Leaflet from './imgs/leaflet.png'
+import Prisma from './imgs/prisma.png'
+import Docker from './imgs/docker.png'
+
 export default function ToolsAndFramework() {
     let Tools_and_Framework = {
+        "Vite": Vite,
+        "Prisma": Prisma,
+        "JWT": jwt,
+        "Docker": Docker,
         "Electron": Electron, 
         "Ethereum": Ethereum, 
         "Git": Git, 
@@ -17,6 +27,7 @@ export default function ToolsAndFramework() {
         "Nodejs": Nodejs, 
         "PhaserIO": PhaserIO, 
         "PlotlyJS": PlotlyJS, 
+        "Leaflet Map": Leaflet,
     }
     return (
         <div className="other-tools-framework row justify-content-center">
